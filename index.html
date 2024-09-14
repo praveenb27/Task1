@@ -1,0 +1,574 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Responsive Webpage</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@latest/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      html {
+        scroll-behavior: smooth;
+      }
+    </style>
+  </head>
+
+  <body class="m-7 bg-gray-100">
+    <!-- Navbar Section and header Section  -->
+    <header>
+      <div
+        class="bg-cover h-screen w-full bg_img"
+        style="background-image: url('bg.jpg')"
+      >
+        <nav class="text-xl font-montserrat">
+          <ul
+            class="flex flex-wrap space-x-4 items-center justify-center md:justify-end px-6 md:px-24 py-6 md:py-16 gap-4 md:gap-8"
+          >
+            <li>
+              <a href="#services" class="text-gray-300 hover:text-white"
+                >Services</a
+              >
+            </li>
+            <li>
+              <a href="#portfolio" class="text-gray-300 hover:text-white"
+                >Portfolio</a
+              >
+            </li>
+            <li>
+              <a href="#about" class="text-gray-300 hover:text-white">About</a>
+            </li>
+            <li>
+              <a href="#Team" class="text-gray-300 hover:text-white">Team</a>
+            </li>
+            <li>
+              <a href="#Contact" class="text-gray-300 hover:text-white"
+                >Contact</a
+              >
+            </li>
+          </ul>
+        </nav>
+        <div
+          class="h-auto md:h-96 text-white z-10 flex flex-col gap-3 md:gap-5 justify-center items-center"
+        >
+          <span
+            class="text-lg md:text-xl italic pt-6 md:pt-28 font-sans"
+            style="font-family: Arial, Helvetica, sans-serif"
+            >Welcome to our Studio!</span
+          >
+          <h1
+            class="md:text-6xl text-3xl font-extrabold md:px-0 px-4 font-sans"
+          >
+            IT'S NICE TO MEET YOU
+          </h1>
+          <button
+            class="bg-yellow-500 hover:bg-yellow-400 rounded-lg py-2 px-4 md:px-6"
+          >
+            Tell Me More
+          </button>
+        </div>
+      </div>
+    </header>
+    <main>
+      <!-- This is the Services section  -->
+
+      <div class="md:max-w-6xl mx-auto pt-10 pb-5" id="services">
+        <div class="flex flex-col justify-center items-center md:m-12 pb-5">
+          <h1
+            class="font-helvetica font-bold text-2xl"
+            style="font-family: Arial, Helvetica, sans-serif"
+          >
+            SERVICE
+          </h1>
+          <p class="text-sm italic">Let's see how we can help you</p>
+        </div>
+
+        <div class="grid md:grid-cols-3 gap-8 grid-cols-1">
+          <div class="text-center bg-blue-200 rounded-lg pb-5">
+            <img
+              src="/Assets/E-Commerce_img.png"
+              alt="E-Commerce Image"
+              class="mx-auto mb-4 w-full h-52 object-cover rounded-t-lg"
+            />
+            <h3 class="text-xl font-semibold my-3">E-Commerce</h3>
+            <p class="px-10 text-sm">
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+              Perferendis deserunt labore quod iste neque odio praesentium sint,
+              aliquam ea quas accusantium, reiciendis totam aut officia ut
+              necessitatibus nisi minus soluta. Praesentium porro eos rerum enim
+              blanditiis sint iste doloremque impedit ipsa, dolor quos iusto
+              excepturi amet dolorum iure ex deserunt!
+            </p>
+          </div>
+
+          <div class="text-center bg-blue-200 rounded-lg pb-5">
+            <img
+              src="/Assets/Responsive web design_img.jpg"
+              alt=""
+              class="mx-auto mb-4 w-full h-52 object-cover rounded-t-lg"
+            />
+            <h3 class="text-xl font-semibold my-3">Responsive Design</h3>
+            <p class="px-10 text-sm">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores
+              placeat atque hic, quia expedita natus vero excepturi ullam
+              repellendus amet ratione tenetur labore! Id modi repudiandae dolor
+              maxime dolorum eligendi similique dignissimos? Tempora dolore
+              ullam ea, alias enim libero provident consectetur qui reiciendis
+              natus temporibus accusantium quos soluta vel nostrum!
+            </p>
+          </div>
+
+          <div class="text-center bg-blue-200 rounded-lg pb-5">
+            <img
+              src="/Assets/Web Security_img.png"
+              alt=""
+              class="mx-auto mb-4 object-cover w-full h-52 rounded-t-lg"
+            />
+            <h3 class="text-xl font-semibold my-3">Web Security</h3>
+            <p class="px-10 text-sm">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores
+              placeat atque hic, quia expedita natus vero excepturi ullam
+              repellendus amet ratione tenetur labore! Id modi repudiandae dolor
+              maxime dolorum eligendi similique dignissimos? Tempora dolore
+              ullam ea, alias enim libero provident consectetur qui reiciendis
+              natus temporibus accusantium quos soluta vel nostrum!
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Portfolio Section  -->
+
+      <section class="md:max-w-6xl mx-auto py-5 container" id="services">
+        <div
+          class="flex flex-col justify-center items-center md:m-10 my-4"
+          id="portfolio"
+        >
+          <h1
+            class="font-helvetica font-bold text-2xl"
+            style="font-family: Arial, Helvetica, sans-serif"
+          >
+            Portfolio
+          </h1>
+          <p class="text-sm italic">Let's describe us</p>
+        </div>
+
+        <div class="grid md:grid-cols-3 grid-cols-1 gap-8 grid-rows-2">
+          <div
+            class="text-center pb-4 mx-2 border-2 border-transparent hover:border-gray-400 transition duration-300"
+          >
+            <img
+              src="/Assets/Threads_img.jpg"
+              alt="Threads image"
+              class="h-52 w-full object-cover"
+            />
+            <h4 class="font-bold text-sm md:py-4 py-2 cursor-pointer">
+              Threads
+            </h4>
+            <a class="text-xs text-black" href="">Illustration</a>
+          </div>
+
+          <div
+            class="text-center pb-4 mx-2 border-2 border-transparent hover:border-gray-400 transition duration-300"
+          >
+            <img src="/Assets/Explore_img.png"" alt="Threads image" class="h-52
+            w-full object-contain" />
+            <h4 class="font-bold text-sm md:py-4 py-2 cursor-pointer">
+              Explore
+            </h4>
+            <a class="text-xs text-black" href="">Graphic Design</a>
+          </div>
+
+          <div
+            class="text-center pb-4 mx-2 border-2 border-transparent hover:border-gray-400 transition duration-300"
+          >
+            <img
+              src="/Assets/Identity_img.jpg"
+              alt="Threads image"
+              class="h-52 w-full object-cover"
+            />
+            <h4 class="font-bold text-sm md:py-4 py-2 cursor-pointer">
+              Finish
+            </h4>
+            <a class="text-xs text-black" href="">Identity</a>
+          </div>
+
+          <div
+            class="text-center pb-4 mx-2 border-2 border-transparent hover:border-gray-400 transition duration-300"
+          >
+            <img
+              src="/Assets/Branding_img.jpg"
+              alt="Threads image"
+              class="h-52 w-full object-cover"
+            />
+            <h4 class="font-bold text-sm md:py-4 py-2 cursor-pointer">Lines</h4>
+            <a class="text-xs text-black" href="">Branding</a>
+          </div>
+
+          <div
+            class="text-center pb-4 mx-2 border-2 border-transparent hover:border-gray-400 transition duration-300"
+          >
+            <img
+              src="/Assets/Web_designer_img.jpg"
+              alt="Threads image"
+              class="h-52 w-full object-cover"
+            />
+            <h4 class="font-bold text-sm md:py-4 py-2 cursor-pointer">
+              Design
+            </h4>
+            <a class="text-xs text-black" href="">Web Designer</a>
+          </div>
+
+          <div
+            class="text-center pb-4 mx-2 border-2 border-transparent hover:border-gray-400 transition duration-300"
+          >
+            <img
+              src="/Assets/Photographer_img.jpg"
+              alt="Threads image"
+              class="h-52 w-full object-cover"
+            />
+            <h4 class="font-bold text-sm md:py-4 py-2 cursor-pointer">
+              Skills
+            </h4>
+            <a class="text-xs text-black" href="">Photographer</a>
+          </div>
+        </div>
+      </section>
+
+      <!-- About section begins -->
+      <section class="md:max-w-6xl mx-auto py-5 container" id="about">
+        <div
+          class="flex flex-col justify-center items-center md:m-10 my-4"
+          id="portfolio"
+        >
+          <h1
+            class="font-helvetica font-bold text-2xl"
+            style="font-family: Arial, Helvetica, sans-serif"
+          >
+            ABOUT
+          </h1>
+          <p class="text-sm font-semibold">Get to know about us more here</p>
+        </div>
+
+        <div class="container py-10 my-10">
+          <div class="grid grid-cols-1 text-center md:gap-32 gap-16">
+            <!-- About 1 Our humble beginning-->
+            <div class="flex md:justify-start md:items-start flex-wrap px-5">
+              <span class="w-96 flex flex-col md:justify-end items-end mx-10">
+                <h4 class="font-bold text-sm">2009-2011</h4>
+                <h4 class="font-bold text-sm pb-2">Our humble beginning</h4>
+                <p class="text-xs">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                  Rerum ipsum quo error tempora laudantium ratione, minus
+                  explicabo culpa eius id placeat ipsam optio porro dignissimos
+                  totam, numquam omnis. Excepturi ipsam earum dignissimos hic
+                  officia assumenda illum placeat quis laborum molestias.
+                </p>
+              </span>
+              <div
+                class="border rounded-full border-t-8 border-yellow-500 transform -rotate-45"
+              >
+                <img
+                  src="/Assets/hologram_img.jpg"
+                  alt="About_image"
+                  class="w-52 h-52 rounded-b-full rounded-tr-full rounded-tl-full border-4 border-gray-300 transform rotate-45"
+                />
+              </div>
+            </div>
+
+            <!-- About 2 An Agency is born-->
+            <div class="flex justify-end items-start flex-wrap">
+              <div
+                class="border rounded-full border-t-8 border-yellow-500 transform rotate-45"
+              >
+                <img
+                  src="/Assets/Agency_born.jpg"
+                  alt="About_image"
+                  class="w-52 h-52 rounded-b-full rounded-tr-full rounded-tl-full border-4 border-gray-300 transform -rotate-45"
+                />
+              </div>
+              <span class="w-96 flex flex-col justify-start items-start mx-10">
+                <h4 class="font-extrabold text-sm">March 2011</h4>
+                <h4 class="font-bold text-sm pb-2">An Agency is born</h4>
+                <p class="text-xs">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                  Rerum ipsum quo error tempora laudantium ratione, minus
+                  explicabo culpa eius id placeat ipsam optio porro dignissimos
+                  totam, numquam omnis. Excepturi ipsam earum dignissimos hic
+                  officia assumenda illum placeat quis laborum molestias.
+                </p>
+              </span>
+            </div>
+            <!-- About 3 -->
+
+            <div class="flex justify-start items-start flex-wrap">
+              <span class="w-96 flex flex-col justify-end items-end mx-10">
+                <h4 class="font-extrabold text-sm">December 2015</h4>
+                <h4 class="font-bold text-sm pb-2">
+                  Transition to Full Service
+                </h4>
+                <p class="text-xs">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                  Rerum ipsum quo error tempora laudantium ratione, minus
+                  explicabo culpa eius id placeat ipsam optio porro dignissimos
+                  totam, numquam omnis. Excepturi ipsam earum dignissimos hic
+                  officia assumenda illum placeat quis laborum molestias.
+                </p>
+              </span>
+              <div
+                class="border rounded-full border-t-8 border-yellow-500 transform -rotate-45"
+              >
+                <img
+                  src="/Assets/Full_service_img.jpg"
+                  alt="About_image"
+                  class="w-52 h-52 rounded-b-full rounded-tr-full rounded-tl-full border-4 border-gray-300 transform rotate-45"
+                />
+              </div>
+            </div>
+            <!-- About 4 -->
+
+            <div class="flex justify-end items-start flex-wrap">
+              <div
+                class="border rounded-full border-t-8 border-yellow-500 transform rotate-45"
+              >
+                <img
+                  src="/Assets/Expansion_img.jpg"
+                  alt="About_image"
+                  class="w-52 h-52 rounded-b-full rounded-tr-full rounded-tl-full border-4 border-gray-300 transform -rotate-45"
+                />
+              </div>
+              <span class="w-96 flex flex-col justify-start items-start mx-10">
+                <h4 class="font-bold text-sm">July 2020</h4>
+                <h4 class="font-bold text-sm pb-2">Phase Two Expansion</h4>
+                <p class="text-xs">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                  Rerum ipsum quo error tempora laudantium ratione, minus
+                  explicabo culpa eius id placeat ipsam optio porro dignissimos
+                  totam, numquam omnis. Excepturi ipsam earum dignissimos hic
+                  officia assumenda illum placeat quis laborum molestias.
+                </p>
+              </span>
+            </div>
+
+            <!-- Last circle -->
+            <div class="flex justify-center items-center flex-wrap">
+              <p
+                class="bg-yellow-400 text-sm font-semibold h-32 w-32 flex flex-row items-center rounded-full text-gray-200 border-4 border-r-gray-300"
+              >
+                Be a part of our Story!
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer part of the page begins -->
+
+    <footer>
+      <div
+        class="flex flex-col items-center mb-10 md:max-w-6xl mx-auto py-5 container"
+        id="Team"
+      >
+        <div
+          class="footbar flex md:flex-row flex-col justify-center md:gap-16 gap-8 items-center w-full py-10"
+        >
+          <img
+            src="/Assets/microsoft_img.png"
+            alt="Microsoft"
+            class="w-32 inline-block"
+          />
+          <img
+            src="/Assets/google_img.png"
+            alt="Google"
+            class="inline-block w-32"
+          />
+          <img
+            src="/Assets/facebook_img.png"
+            alt="Facebook"
+            class="w-32 inline-block"
+          />
+          <img
+            src="/Assets/amazon_logo.png"
+            alt="Amazon"
+            class="w-32 bg-gray-900 h-12 inline-block"
+          />
+        </div>
+        <!-- Image part -->
+        <div
+          class="container flex flex-col justify-center items-center bg-blue-50 border border-blue-100 md:max-w-fit max-w-96"
+        >
+          <span>
+            <h1
+              class="text-center text-2xl font-semibold font-montserrat mt-10 mb-5"
+              style="color: rgb(9, 140, 140)"
+            >
+              OUR AMAZING TEAM
+            </h1>
+            <p class="text-center text-lg font-montserrat text-gray-400">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            </p>
+          </span>
+
+          <div
+            class="container flex flex-wrap items-center justify-center gap-20 my-10"
+          >
+            <div class="flex flex-col justify-center items-center gap-5">
+              <img
+                src="/Assets/Person1_img.jpg"
+                alt=""
+                class="w-44 h-44 inline object-cover rounded-full"
+              />
+              <span>
+                <h3 class="mb-2 text-lg font-semibold text-gray-600">
+                  Theja Croft
+                </h3>
+                <h4 class="text-lg font-bold" style="color: rgb(14, 121, 121)">
+                  Lead Consultant
+                </h4>
+              </span>
+            </div>
+            <div class="flex flex-col justify-center items-center gap-5">
+              <img
+                src="/Assets/Person2_img.jpg"
+                alt=""
+                class="w-44 h-44 inline object-cover rounded-full"
+              />
+              <span>
+                <h3 class="mb-2 text-lg font-semibold text-gray-600">
+                  Harry Potter
+                </h3>
+                <h4 class="text-lg font-bold" style="color: rgb(14, 121, 121)">
+                  Lead Designer
+                </h4>
+              </span>
+            </div>
+            <div class="flex flex-col justify-center items-center gap-5">
+              <img
+                src="/Assets/Person3_img.jpg"
+                alt=""
+                class="w-44 h-44 inline object-cover rounded-full"
+              />
+              <span>
+                <h3 class="mb-2 text-lg font-semibold text-gray-600">
+                  Mathew Perry
+                </h3>
+                <h4 class="text-lg font-bold" style="color: rgb(14, 121, 121)">
+                  Lead Analyst
+                </h4>
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Form Part of the page -->
+      <section
+        class="md:max-w-6xl mx-auto py-5 container flex flex-col items-center mb-10"
+        id="Contact"
+      >
+        <div
+          class="h-full w-full bg-cover"
+          style="background-image: url('Assets/World_map_img.jpg')"
+        >
+          <div class="md:px-10 px-4 pt-10">
+            <h1
+              class="text-white text-center text-2xl font-semibold"
+              style="color: #caf0f8"
+            >
+              CONTACT
+              <p class="inline" style="color: #e63946">US</p>
+            </h1>
+            <p class="text-center text-gray-300 italic text-xs my-8">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Laudantium, magni.
+            </p>
+            <div
+              class="grid md:grid-cols-2 grid-cols-1 md:gap-8 gap-4 md:px-0 px-4"
+            >
+              <form action="" class="flex flex-col gap-4">
+                <div
+                  class="flex flex-col gap-8 max-w-96 justify-center md:pl-10"
+                >
+                  <input
+                    type="text"
+                    name=""
+                    id=""
+                    placeholder="Your Name*"
+                    required
+                    class="border rounded-sm p-2 text-xs font-medium bg-gray-100 text-gray-400"
+                  />
+                  <input
+                    type="email"
+                    name=""
+                    id=""
+                    placeholder="Your Email*"
+                    required
+                    class="border rounded-sm p-2 text-xs font-medium bg-gray-100 text-gray-400 focus:text-black"
+                  />
+                  <input
+                    type="number"
+                    name=""
+                    id=""
+                    placeholder="Your Number*"
+                    required
+                    min="0"
+                    class="border rounded-sm p-2 text-xs font-medium bg-gray-100 text-gray-400 focus:text-black"
+                  />
+                </div>
+              </form>
+
+              <div class="flex justify-start items-start">
+                <form action="" class="">
+                  <textarea
+                    name=""
+                    id=""
+                    maxlength="1000"
+                    placeholder="Your Message*"
+                    class="border rounded-sm text-xs font-medium bg-gray-100 text-gray-400 md:w-96 md:h-44 p-2 focus:text-black"
+                  ></textarea>
+                </form>
+              </div>
+            </div>
+            <div class="grid grid-rows-1 grid-cols-1">
+              <form class="flex justify-center items-center">
+                <button
+                  class="text-gray-100 text-xs px-5 py-2 m-10 border-1 rounded-lg bg-red-700 hover:bg-red-500"
+                >
+                  SEND MESSAGE
+                </button>
+              </form>
+            </div>
+          </div>
+          <div
+            class="h-60 relative flex flex-col justify-center items-center gap-4 bg-blue-500 border"
+          >
+            <div class="flex gap-8">
+              <i class="fa-brands fa-facebook text-white fa-2x"></i>
+              <i class="fa-brands fa-twitter text-white fa-2x"></i>
+              <i class="fa-brands fa-instagram text-white fa-2x"></i>
+              <i class="fa-brands fa-linkedin text-white fa-2x"></i>
+            </div>
+            <div>
+              <p class="text-white text-xs mt-5">
+                &copy;Copyright 2024 | All Rights Reserved
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </footer>
+  </body>
+</html>
